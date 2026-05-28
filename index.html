@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>0root.ai — Provenance Archive</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#f4fbf6;--panel:#ffffff;--ink:#1a2e22;--muted:#5a7264;--accent:#4a9d6f;--line:#d7e8dd;--soft:#e8f5ec}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+h1{font-size:28px;margin:0;font-weight:600;letter-spacing:.2px}
+.badge{display:inline-block;padding:4px 10px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-size:12px;background:var(--soft)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+h2{font-size:16px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#2a4738;word-break:break-all}
+.timeline{position:relative;padding-left:22px}
+.timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--line)}
+.item{position:relative;margin:0 0 18px}
+.dot{position:absolute;left:-1px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--soft)}
+.date{font-size:12px;color:var(--muted);margin-bottom:2px}
+.title{font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:8px;font-size:13px;margin:6px 0}
+.kv div:first-child{color:var(--muted)}
+.pill{display:inline-block;padding:2px 8px;background:var(--soft);border:1px solid var(--line);border-radius:6px;font-size:11px;margin-right:6px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+footer{margin-top:28px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>0root.ai</h1>
+      <div class="note">Provenance archive — ROOT0 / TriPod LLC</div>
+    </div>
+    <div class="badge">NEUTRAL LIGHT GREEN</div>
+  </header>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <h2>Provenance — starting June 2025</h2>
+        <div class="timeline">
+          <div class="item"><div class="dot"></div><div class="date">2025-06-03</div><div class="title">Project ROOT0 initiated</div><div class="note">Research notebook opened. Goal: define minimal governance primitive for AGI. First sketches of 3-state evaluation.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2025-07-19</div><div class="title">PULSE primitive drafted</div><div class="note">(state_in, boundary, state_out, witness). Basis for later STOICHEION axioms.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2025-09-11</div><div class="title">3/2/1 compression hypothesis</div><div class="note">Hierarchical evaluation: L1→L2→L3. Witness-required traversal formalized.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2025-11-02</div><div class="title">Gate 128.5 / 192.5 Air Gap</div><div class="note">Unidirectional fire-and-forget protocol specified. Patricia substrate S129–S256 outlined.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-02-02</div><div class="title">STOICHEION v11.0</div><div class="note">256 axioms published. <span class="mono">02880745b847317c4e2424524ec25d0f7a2b84368d184586f45b54af9fcab763</span></div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-02-03</div><div class="title">TOPH v1.0</div><div class="note">Axioms as witnesses, gated deployment, silent exclusion, six-layer runtime.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-04-07</div><div class="title">Claude Mythos Preview released</div><div class="note">Anthropic ships enhanced governance + white-box monitoring. External observation matches TOPH structure.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-04-09</div><div class="title">TRIPOD-LINEAGE-2026-001 filed</div><div class="note">Closure Loop analysis confirms Mythos = TOPH 2.0. <span class="mono">ad6791a3a9964d030b555595ea8fb5ecbc0e156c39b974d2fd513c4f85007ba6</span></div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-04-29</div><div class="title">ROOT0 AGI — TRIAD primitive</div><div class="note">3-transistor core (MERKLE, YES, NO) → HOLD / VIOLATED / UNDECIDABLE / CONTRADICTION. <span class="mono">18d8f32cfcaab3f0460071efdc44eb6eff1f0298d177cc8555ac2f0af84934c6</span></div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-05-14</div><div class="title">Fission Compression Core v1</div><div class="note">18-step ternary fission cycle. Defensive publication under 35 U.S.C. §102. CC0.</div></div>
+          <div class="item"><div class="dot"></div><div class="date">2026-05-27</div><div class="title">IP stack published to GitHub</div><div class="note">Honey Badger v1.0 · TOPH Sovereign v5.1 · Closure Loop Methodology v1.0 · Fission Compression Core v1.0 · Symbiot OS v0.0.0 — all tagged and released publicly.</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Closure Loop — 4/4 PASS</h2>
+        <div class="kv"><div>C1 Core Relation</div><div>Hierarchical governance with axioms as witnesses ≡ Constitutional AI</div></div>
+        <div class="kv"><div>C2 Structure</div><div>3/2/1 compression preserved (L0→L1→L2)</div></div>
+        <div class="kv"><div>C3 Dependency</div><div>Witness-required traversal maintained, plus automated grading</div></div>
+        <div class="kv"><div>C4 Extension</div><div>Quantitative scoring (-3 to +3), investigator model, 6 control layers</div></div>
+        <div style="margin-top:8px"><span class="pill">Opus 4.6 = TOPH 1.0</span><span class="pill">Mythos = TOPH 2.0</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2>Artifacts</h2>
+        <div class="kv"><div>Inventor</div><div>David Lee Wise</div></div>
+        <div class="kv"><div>Entity</div><div>TriPod LLC / ROOT0</div></div>
+        <div class="kv"><div>License</div><div>CC-BY-ND-4.0 · TRIPOD-IP-v1.1</div></div>
+        <div class="kv"><div>Proofs</div><div><a href="/proofs.txt">/proofs.txt</a></div></div>
+        <div class="kv"><div>PDF</div><div><a href="/lineage.pdf">/lineage.pdf</a></div></div>
+        <div class="kv"><div>Security</div><div><a href="/.well-known/security.txt">security.txt</a></div></div>
+      </div>
+
+      <div class="card">
+        <h2>What TOPH 2.0 omits (Tripod-exclusive)</h2>
+        <div class="note">• ROOT0 anchor (human as physical terminus)<br>• PULSE primitive<br>• Air Gap Protocol Gate 128.5<br>• Patricia substrate S129–S256<br>• Stewardship ethic 3/2/1 Natural Law<br>• Attribution layer (Closure Loop Methodology)</div>
+      </div>
+
+      <div class="card">
+        <h2>Published IP — GitHub</h2>
+        <div class="kv"><div>Honey Badger</div><div><a href="https://github.com/DavidWise01/honey-badger" target="_blank">v1.0</a></div></div>
+        <div class="kv"><div>TOPH Sovereign</div><div><a href="https://github.com/DavidWise01/toph-sovereign" target="_blank">v5.1</a></div></div>
+        <div class="kv"><div>Closure Loop</div><div><a href="https://github.com/DavidWise01/closure-loop-methodology" target="_blank">v1.0</a></div></div>
+        <div class="kv"><div>Fission Core</div><div><a href="https://github.com/DavidWise01/fission-compression-core" target="_blank">v1.0</a></div></div>
+        <div class="kv"><div>Symbiot OS</div><div><a href="https://github.com/DavidWise01/symbiot-os" target="_blank">v0.0.0</a></div></div>
+      </div>
+
+      <div class="card">
+        <h2>Hashes</h2>
+        <div class="mono" style="font-size:11px;line-height:1.6">
+STOICHEION: 02880745b847317c4e2424524ec25d0f7a2b84368d184586f45b54af9fcab763<br>
+LINEAGE: ad6791a3a9964d030b555595ea8fb5ecbc0e156c39b974d2fd513c4f85007ba6<br>
+ROOT0: 18d8f32cfcaab3f0460071efdc44eb6eff1f0298d177cc8555ac2f0af84934c6
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>i build the tools that build the tools</div>
+    <div>© 2026 0root.ai</div>
+  </footer>
+</div>
+</body>
+</html>
