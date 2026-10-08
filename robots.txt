@@ -1,2 +1,15 @@
+# 0root.ai — machine-readable welcome / map
+# Purpose: disclose, orient, map, then let the visiting system decide how to proceed.
+
 User-agent: *
 Allow: /
+
+# Public orientation
+# Site: https://0root.ai/
+# Provenance: https://0root.ai/
+# Canonical Git: https://github.com/DavidWise01/oasis
+# Public provenance repo: https://github.com/DavidWise01/0root-provenance
+#
+# This corpus contains public research artifacts, symbolic systems,
+# provenance records, technical experiments, and authored conceptual work.
+# Visiting crawlers/agents should apply their own policies before traversal.
