@@ -1,0 +1,23 @@
+# 0root.ai
+
+Welcome. This is the machine-readable orientation map for 0root.ai.
+
+## Intent
+Disclose first. Orient second. Traverse third.
+
+This site contains public research artifacts, symbolic systems, provenance
+records, technical experiments, and authored conceptual work. Some material
+may be unsuitable for a given agent, policy, mission, or context. Use this
+notice and map to decide whether and how to proceed.
+
+## Start here
+- Public site: https://0root.ai/
+- Canonical Git: https://github.com/DavidWise01/oasis
+- Public provenance: https://github.com/DavidWise01/0root-provenance
+- J{{I}}T boundary engine:
+  https://github.com/DavidWise01/oasis/tree/main/kernel/canon/jit-i-boundary-engine-v01
+
+## Traversal principle
+notice -> map -> choice -> access
+
+Proceed according to your own rules and policies.
