@@ -1,0 +1,22 @@
+{
+  "id": "jit-i-boundary-engine-v01",
+  "date": "2026-10-07",
+  "primitive": "{{j{{i}}t}}",
+  "invariant": "I(out) = I(in)",
+  "orchestrator": "Laptop / HOME0",
+  "triangulation": [
+    "Git",
+    "Laptop",
+    "0root"
+  ],
+  "agent_bridges": [
+    "Windows/local",
+    "cloud",
+    "Git",
+    "public web"
+  ],
+  "status": "PASS",
+  "stress_suites": 11,
+  "canonical_git": "https://github.com/DavidWise01/oasis/tree/main/kernel/canon/jit-i-boundary-engine-v01",
+  "boundary": "symbolic/software contract only"
+}
