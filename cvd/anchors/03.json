@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/karsa",
+      "sha": "da9a97f1b55743886fea980a3851300f3add3385",
+      "url": "https://github.com/DavidWise01/karsa/commit/da9a97f1b55743886fea980a3851300f3add3385"
+    },
+    {
+      "repo": "DavidWise01/stargate",
+      "sha": "19946b90c5bce9235aac168071787d3f9faf5caa",
+      "url": "https://github.com/DavidWise01/stargate/commit/19946b90c5bce9235aac168071787d3f9faf5caa"
+    },
+    {
+      "repo": "DavidWise01/claude-design-akasha",
+      "sha": "416c2b204253a3949b27d7671790abc4bb98e9d9",
+      "url": "https://github.com/DavidWise01/claude-design-akasha/commit/416c2b204253a3949b27d7671790abc4bb98e9d9"
+    },
+    {
+      "repo": "DavidWise01/toph-sovereign",
+      "sha": "656c22c4c05f8ffccbc25b3d97e66c4a9ae2f09c",
+      "url": "https://github.com/DavidWise01/toph-sovereign/commit/656c22c4c05f8ffccbc25b3d97e66c4a9ae2f09c"
+    },
+    {
+      "repo": "DavidWise01/closure-loop-methodology",
+      "sha": "ef06230f0eeb243696925bc5dce80e9c5f0c99f1",
+      "url": "https://github.com/DavidWise01/closure-loop-methodology/commit/ef06230f0eeb243696925bc5dce80e9c5f0c99f1"
+    },
+    {
+      "repo": "DavidWise01/symbiot-os",
+      "sha": "e1d3567ab1fbf16b75f7aafc10832850248163f6",
+      "url": "https://github.com/DavidWise01/symbiot-os/commit/e1d3567ab1fbf16b75f7aafc10832850248163f6"
+    },
+    {
+      "repo": "DavidWise01/0root-provenance",
+      "sha": "ff72e701f9710e5332f33ec0090ff6142eaf1920",
+      "url": "https://github.com/DavidWise01/0root-provenance/commit/ff72e701f9710e5332f33ec0090ff6142eaf1920"
+    },
+    {
+      "repo": "DavidWise01/swarm-os",
+      "sha": "49cb15f82f64a81248e466bda1b93a1454628818",
+      "url": "https://github.com/DavidWise01/swarm-os/commit/49cb15f82f64a81248e466bda1b93a1454628818"
+    }
+  ]
+}
