@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/tripod-energy-suite",
+      "sha": "8ad4420998fcee1267764d31f5255ed9c137e578",
+      "url": "https://github.com/DavidWise01/tripod-energy-suite/commit/8ad4420998fcee1267764d31f5255ed9c137e578"
+    },
+    {
+      "repo": "DavidWise01/tripod-quantum-dots",
+      "sha": "b9739b7fb1acf250b4f70e7de200a72944b61139",
+      "url": "https://github.com/DavidWise01/tripod-quantum-dots/commit/b9739b7fb1acf250b4f70e7de200a72944b61139"
+    },
+    {
+      "repo": "DavidWise01/tripod-cardinal",
+      "sha": "119ec2cbc1e6845a40ccc0648f61d4956ce05b28",
+      "url": "https://github.com/DavidWise01/tripod-cardinal/commit/119ec2cbc1e6845a40ccc0648f61d4956ce05b28"
+    },
+    {
+      "repo": "DavidWise01/tripod-pck",
+      "sha": "affbab3a5542848d37ec8ce8f3ddb48abb051fdf",
+      "url": "https://github.com/DavidWise01/tripod-pck/commit/affbab3a5542848d37ec8ce8f3ddb48abb051fdf"
+    },
+    {
+      "repo": "DavidWise01/arc-reactor-mk24",
+      "sha": "043e2c283fa6e60b3fe1a41b7a6ece141a1bec20",
+      "url": "https://github.com/DavidWise01/arc-reactor-mk24/commit/043e2c283fa6e60b3fe1a41b7a6ece141a1bec20"
+    },
+    {
+      "repo": "DavidWise01/nine-body-audit",
+      "sha": "e44d2cf9d58356e9d7754e07b5ce74b29149bc3b",
+      "url": "https://github.com/DavidWise01/nine-body-audit/commit/e44d2cf9d58356e9d7754e07b5ce74b29149bc3b"
+    },
+    {
+      "repo": "DavidWise01/charlottes-web",
+      "sha": "90e7aec120bfeac5a019e54b395170dce7086873",
+      "url": "https://github.com/DavidWise01/charlottes-web/commit/90e7aec120bfeac5a019e54b395170dce7086873"
+    },
+    {
+      "repo": "DavidWise01/solar-jetman",
+      "sha": "c6cca8b7a7a4a944d5377b9a51a9674e9ad03595",
+      "url": "https://github.com/DavidWise01/solar-jetman/commit/c6cca8b7a7a4a944d5377b9a51a9674e9ad03595"
+    }
+  ]
+}
