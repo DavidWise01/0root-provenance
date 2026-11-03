@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/bridge-burner",
+      "sha": "3f3dc6ba310b2809d144541b8a2f1438dd478110",
+      "url": "https://github.com/DavidWise01/bridge-burner/commit/3f3dc6ba310b2809d144541b8a2f1438dd478110"
+    },
+    {
+      "repo": "DavidWise01/lineage-engine",
+      "sha": "05ac83586e0dbcef798cc671071a32f72b0e97d5",
+      "url": "https://github.com/DavidWise01/lineage-engine/commit/05ac83586e0dbcef798cc671071a32f72b0e97d5"
+    },
+    {
+      "repo": "DavidWise01/lumen",
+      "sha": "83d86ec60904cc89f94f912428aaa159f12a6246",
+      "url": "https://github.com/DavidWise01/lumen/commit/83d86ec60904cc89f94f912428aaa159f12a6246"
+    },
+    {
+      "repo": "DavidWise01/adas-law-victorian",
+      "sha": "94ec9bf0bb1a21caff6e3fa135d4dbe03b591a1d",
+      "url": "https://github.com/DavidWise01/adas-law-victorian/commit/94ec9bf0bb1a21caff6e3fa135d4dbe03b591a1d"
+    },
+    {
+      "repo": "DavidWise01/hephaestus",
+      "sha": "0366589709569b3342f8dca99f52dd4e0e11f196",
+      "url": "https://github.com/DavidWise01/hephaestus/commit/0366589709569b3342f8dca99f52dd4e0e11f196"
+    },
+    {
+      "repo": "DavidWise01/moirai",
+      "sha": "d1d3f904f6555326ab7f7994f915af3cd72a9519",
+      "url": "https://github.com/DavidWise01/moirai/commit/d1d3f904f6555326ab7f7994f915af3cd72a9519"
+    },
+    {
+      "repo": "DavidWise01/triados",
+      "sha": "ccc3abe72f6f987ac7a008496bc6364dee8955d0",
+      "url": "https://github.com/DavidWise01/triados/commit/ccc3abe72f6f987ac7a008496bc6364dee8955d0"
+    },
+    {
+      "repo": "DavidWise01/tripod",
+      "sha": "31b411e5f01dd3e71fafe69e0fc9b54843e72497",
+      "url": "https://github.com/DavidWise01/tripod/commit/31b411e5f01dd3e71fafe69e0fc9b54843e72497"
+    }
+  ]
+}
