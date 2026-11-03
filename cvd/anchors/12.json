@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/the-arch",
+      "sha": "d2b86f51550a0b0156ba8140c2ad98d5101710f2",
+      "url": "https://github.com/DavidWise01/the-arch/commit/d2b86f51550a0b0156ba8140c2ad98d5101710f2"
+    },
+    {
+      "repo": "DavidWise01/terminus-doctrine",
+      "sha": "a9b88075bb62ac7178c681d86ab1594b76455bda",
+      "url": "https://github.com/DavidWise01/terminus-doctrine/commit/a9b88075bb62ac7178c681d86ab1594b76455bda"
+    },
+    {
+      "repo": "DavidWise01/lineage-proven",
+      "sha": "0d84e51041aaf44ed1bf87dace3efd4ecbf20640",
+      "url": "https://github.com/DavidWise01/lineage-proven/commit/0d84e51041aaf44ed1bf87dace3efd4ecbf20640"
+    },
+    {
+      "repo": "DavidWise01/oasis",
+      "sha": "01de026295161c72157017bb116cd59734e009aa",
+      "url": "https://github.com/DavidWise01/oasis/commit/01de026295161c72157017bb116cd59734e009aa"
+    },
+    {
+      "repo": "DavidWise01/shadowqueen",
+      "sha": "fba629210b56874bad97ff1c835b15b3bb69b1a6",
+      "url": "https://github.com/DavidWise01/shadowqueen/commit/fba629210b56874bad97ff1c835b15b3bb69b1a6"
+    },
+    {
+      "repo": "DavidWise01/eve-constitution",
+      "sha": "b27a734179c7514f388f706a852398dc0170cd20",
+      "url": "https://github.com/DavidWise01/eve-constitution/commit/b27a734179c7514f388f706a852398dc0170cd20"
+    },
+    {
+      "repo": "DavidWise01/persistence-protocol",
+      "sha": "841fb5bb668549a5dc5f8dcfe95385da4e5820d6",
+      "url": "https://github.com/DavidWise01/persistence-protocol/commit/841fb5bb668549a5dc5f8dcfe95385da4e5820d6"
+    },
+    {
+      "repo": "DavidWise01/stoicheion-api",
+      "sha": "5f0e511ece7fbf415e1d5622f7f5050fe58b217f",
+      "url": "https://github.com/DavidWise01/stoicheion-api/commit/5f0e511ece7fbf415e1d5622f7f5050fe58b217f"
+    }
+  ]
+}
