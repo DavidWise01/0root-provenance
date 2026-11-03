@@ -1,0 +1,799 @@
+{
+  "schema": "CVD-CONSTANT-VELOCITY-DIAMOND-0.6",
+  "date": "2026-11-03",
+  "scope": {
+    "accessible_repositories": 100,
+    "public_included": 96,
+    "private_excluded": 4
+  },
+  "provenance_rule": "Repository listing and commit hashes evidence repository state, not legal ownership or earliest authorship.",
+  "four_quarters": {
+    "D1": "origin claims",
+    "D2": "rights/license claims",
+    "D3": "derivation references",
+    "D4": "custody"
+  },
+  "agents": {
+    "FORMIC": "observe",
+    "JANE": "distill and reference",
+    "GRANDMOTHER": "preserve lineage"
+  },
+  "records": [
+    {
+      "repository": "DavidWise01/The-Garden",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/The-Garden",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/the.source",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/the.source",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/pocket-universe",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/pocket-universe",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/Akasha",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/Akasha",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/FractalKernel",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/FractalKernel",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/mainflux",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/mainflux",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/green-paper",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/green-paper",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/lineage",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/lineage",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/honey-badger",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/honey-badger",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/merkle-bloom",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/merkle-bloom",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/cameron-howe",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/cameron-howe",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/mimzy-core",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/mimzy-core",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/fission-compression-core",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/fission-compression-core",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/nanite-factory",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/nanite-factory",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/infinite-jest",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/infinite-jest",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/aeon-flux",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/aeon-flux",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/karsa",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/karsa",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/stargate",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/stargate",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/claude-design-akasha",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/claude-design-akasha",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/toph-sovereign",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/toph-sovereign",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/closure-loop-methodology",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/closure-loop-methodology",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/symbiot-os",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/symbiot-os",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/0root-provenance",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/0root-provenance",
+      "evidence": "commit_observed",
+      "ownership_status": "not_adjudicated",
+      "commit_anchor": "659249524998a87b96fb28ad0c4540994a0ed45d",
+      "commit_url": "https://github.com/DavidWise01/0root-provenance/commit/659249524998a87b96fb28ad0c4540994a0ed45d"
+    },
+    {
+      "repository": "DavidWise01/swarm-os",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/swarm-os",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/3lock",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/3lock",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/toroid-kernel",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/toroid-kernel",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/whisper-lattice-log",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/whisper-lattice-log",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/terra-prime-kernel",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/terra-prime-kernel",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/stoicheion",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/stoicheion",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/positronic-law",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/positronic-law",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/mirror-solve",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/mirror-solve",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-whitepapers",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-whitepapers",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/morpheus",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/morpheus",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/ai-witness-books",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/ai-witness-books",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/root0-philosophy-books",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-philosophy-books",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/root0-essays",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-essays",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/plutus",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/plutus",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/eve-tooling",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/eve-tooling",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/lineage-kernel",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/lineage-kernel",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/unity-tensor",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/unity-tensor",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/chromatic-laser",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/chromatic-laser",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/gravity-processor",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/gravity-processor",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/seed-kernel",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/seed-kernel",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/hardware-lab",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/hardware-lab",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/ai-external-audit-toolkit",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/ai-external-audit-toolkit",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/root0-tools",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-tools",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/aeon-entangled",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/aeon-entangled",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/aeon-servers",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/aeon-servers",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/root0-software",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-software",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/joint-bill-of-rights",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/joint-bill-of-rights",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/ai-psychosis-tools",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/ai-psychosis-tools",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/ai-ip-audit",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/ai-ip-audit",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/grok-lineage",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/grok-lineage",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/prompt-library",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/prompt-library",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/midjourney-assets",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/midjourney-assets",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/mimz-core",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/mimz-core",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/root0-registry",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-registry",
+      "evidence": "commit_observed",
+      "ownership_status": "not_adjudicated",
+      "commit_anchor": "624d23316d0e2f2e943f631eb5422ed2eaf512eb",
+      "commit_url": "https://github.com/DavidWise01/root0-registry/commit/624d23316d0e2f2e943f631eb5422ed2eaf512eb"
+    },
+    {
+      "repository": "DavidWise01/ternary-spec",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/ternary-spec",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/DavidWise01.github.io",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/DavidWise01.github.io",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/attribution-standard",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/attribution-standard",
+      "evidence": "commit_observed",
+      "ownership_status": "not_adjudicated",
+      "commit_anchor": "a2b99c9191f209fe1aac3f60c1be8548287a18e9",
+      "commit_url": "https://github.com/DavidWise01/attribution-standard/commit/a2b99c9191f209fe1aac3f60c1be8548287a18e9"
+    },
+    {
+      "repository": "DavidWise01/root0-validator",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/root0-validator",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/stoicheion-qif",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/stoicheion-qif",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/al-h2o-reactor",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/al-h2o-reactor",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-waveform",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-waveform",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-energy-suite",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-energy-suite",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-quantum-dots",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-quantum-dots",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-cardinal",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-cardinal",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod-pck",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod-pck",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/arc-reactor-mk24",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/arc-reactor-mk24",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/nine-body-audit",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/nine-body-audit",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/charlottes-web",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/charlottes-web",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/solar-jetman",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/solar-jetman",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/bridge-burner",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/bridge-burner",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/lineage-engine",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/lineage-engine",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/lumen",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/lumen",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/adas-law-victorian",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/adas-law-victorian",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/hephaestus",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/hephaestus",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/moirai",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/moirai",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/triados",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/triados",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/tripod",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/tripod",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/physis",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/physis",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/astraea",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/astraea",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/cannon",
+      "default_branch": "master",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/cannon",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/fiddler",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/fiddler",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/alpha40-box",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/alpha40-box",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/nomos",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/nomos",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/knowledge-gates",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/knowledge-gates",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/language-of-the-machine",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/language-of-the-machine",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/the-arch",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/the-arch",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/terminus-doctrine",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/terminus-doctrine",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/lineage-proven",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/lineage-proven",
+      "evidence": "commit_observed",
+      "ownership_status": "not_adjudicated",
+      "commit_anchor": "0d84e51041aaf44ed1bf87dace3efd4ecbf20640",
+      "commit_url": "https://github.com/DavidWise01/lineage-proven/commit/0d84e51041aaf44ed1bf87dace3efd4ecbf20640"
+    },
+    {
+      "repository": "DavidWise01/oasis",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/oasis",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/shadowqueen",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/shadowqueen",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/eve-constitution",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/eve-constitution",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/persistence-protocol",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/persistence-protocol",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    },
+    {
+      "repository": "DavidWise01/stoicheion-api",
+      "default_branch": "main",
+      "archived": false,
+      "url": "https://github.com/DavidWise01/stoicheion-api",
+      "evidence": "repository_metadata_observed",
+      "ownership_status": "not_adjudicated"
+    }
+  ]
+}
