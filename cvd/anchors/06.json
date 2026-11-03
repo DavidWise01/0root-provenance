@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/chromatic-laser",
+      "sha": "4aecb0119df7f0e3acbbc18b65c6df984a1948ea",
+      "url": "https://github.com/DavidWise01/chromatic-laser/commit/4aecb0119df7f0e3acbbc18b65c6df984a1948ea"
+    },
+    {
+      "repo": "DavidWise01/gravity-processor",
+      "sha": "e3dcbd2568ac5dbcc7652b9cfbe2a2e58c9fe417",
+      "url": "https://github.com/DavidWise01/gravity-processor/commit/e3dcbd2568ac5dbcc7652b9cfbe2a2e58c9fe417"
+    },
+    {
+      "repo": "DavidWise01/seed-kernel",
+      "sha": "8d4fc6d730ac297eb5440ade501f152e8c47e1f4",
+      "url": "https://github.com/DavidWise01/seed-kernel/commit/8d4fc6d730ac297eb5440ade501f152e8c47e1f4"
+    },
+    {
+      "repo": "DavidWise01/hardware-lab",
+      "sha": "d08630e1f4f8ab5cbe531e8fec3e350e07d08243",
+      "url": "https://github.com/DavidWise01/hardware-lab/commit/d08630e1f4f8ab5cbe531e8fec3e350e07d08243"
+    },
+    {
+      "repo": "DavidWise01/ai-external-audit-toolkit",
+      "sha": "6f237cd6408118b5c19d957a9a6a17c72018c66c",
+      "url": "https://github.com/DavidWise01/ai-external-audit-toolkit/commit/6f237cd6408118b5c19d957a9a6a17c72018c66c"
+    },
+    {
+      "repo": "DavidWise01/root0-tools",
+      "sha": "d4c85f205f93b8b0be207cbaf7860023a0f9952f",
+      "url": "https://github.com/DavidWise01/root0-tools/commit/d4c85f205f93b8b0be207cbaf7860023a0f9952f"
+    },
+    {
+      "repo": "DavidWise01/aeon-entangled",
+      "sha": "79be44288babb31946a4062e6a8dfc3dd8317aad",
+      "url": "https://github.com/DavidWise01/aeon-entangled/commit/79be44288babb31946a4062e6a8dfc3dd8317aad"
+    },
+    {
+      "repo": "DavidWise01/aeon-servers",
+      "sha": "5f99b6f99ed65233a685353151dbe8f458526d69",
+      "url": "https://github.com/DavidWise01/aeon-servers/commit/5f99b6f99ed65233a685353151dbe8f458526d69"
+    }
+  ]
+}
