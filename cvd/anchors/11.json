@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/physis",
+      "sha": "ca3ddfb6ec62080a5533ba0b317deb662b6bb23a",
+      "url": "https://github.com/DavidWise01/physis/commit/ca3ddfb6ec62080a5533ba0b317deb662b6bb23a"
+    },
+    {
+      "repo": "DavidWise01/astraea",
+      "sha": "21ea27511c9f7875515c26a2aa2486f63b4ec66a",
+      "url": "https://github.com/DavidWise01/astraea/commit/21ea27511c9f7875515c26a2aa2486f63b4ec66a"
+    },
+    {
+      "repo": "DavidWise01/cannon",
+      "sha": "f108ee325a6c37a91acde2e0e11be4f9910c2f1d",
+      "url": "https://github.com/DavidWise01/cannon/commit/f108ee325a6c37a91acde2e0e11be4f9910c2f1d"
+    },
+    {
+      "repo": "DavidWise01/fiddler",
+      "sha": "c846b536c423471638c79ebce6717c1aaedf4b7e",
+      "url": "https://github.com/DavidWise01/fiddler/commit/c846b536c423471638c79ebce6717c1aaedf4b7e"
+    },
+    {
+      "repo": "DavidWise01/alpha40-box",
+      "sha": "ca46e0b254ba8d72b0d1bba85c738800c9515969",
+      "url": "https://github.com/DavidWise01/alpha40-box/commit/ca46e0b254ba8d72b0d1bba85c738800c9515969"
+    },
+    {
+      "repo": "DavidWise01/nomos",
+      "sha": "1fa76516a5900ef5487179cf33df66918ce11ab3",
+      "url": "https://github.com/DavidWise01/nomos/commit/1fa76516a5900ef5487179cf33df66918ce11ab3"
+    },
+    {
+      "repo": "DavidWise01/knowledge-gates",
+      "sha": "bc50082265d509f1f51fdc249a853ed9e2aab8bb",
+      "url": "https://github.com/DavidWise01/knowledge-gates/commit/bc50082265d509f1f51fdc249a853ed9e2aab8bb"
+    },
+    {
+      "repo": "DavidWise01/language-of-the-machine",
+      "sha": "1fa3432ac18951ab55cd2a8e2be6e3101f133ce3",
+      "url": "https://github.com/DavidWise01/language-of-the-machine/commit/1fa3432ac18951ab55cd2a8e2be6e3101f133ce3"
+    }
+  ]
+}
