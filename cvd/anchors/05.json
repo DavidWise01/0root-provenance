@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/morpheus",
+      "sha": "43b1e13132301022daac86c999e17425dafdae45",
+      "url": "https://github.com/DavidWise01/morpheus/commit/43b1e13132301022daac86c999e17425dafdae45"
+    },
+    {
+      "repo": "DavidWise01/ai-witness-books",
+      "sha": "86b490ac30288919e86060e905f5c71034417ba0",
+      "url": "https://github.com/DavidWise01/ai-witness-books/commit/86b490ac30288919e86060e905f5c71034417ba0"
+    },
+    {
+      "repo": "DavidWise01/root0-philosophy-books",
+      "sha": "c0814cb0a035bfde9e03e35f45bbfd1645758648",
+      "url": "https://github.com/DavidWise01/root0-philosophy-books/commit/c0814cb0a035bfde9e03e35f45bbfd1645758648"
+    },
+    {
+      "repo": "DavidWise01/root0-essays",
+      "sha": "719c5795e4b8be51145182efd5b3f0543a7d60d2",
+      "url": "https://github.com/DavidWise01/root0-essays/commit/719c5795e4b8be51145182efd5b3f0543a7d60d2"
+    },
+    {
+      "repo": "DavidWise01/plutus",
+      "sha": "d15aeab4455e09edab36cac1410cb85ca283fa21",
+      "url": "https://github.com/DavidWise01/plutus/commit/d15aeab4455e09edab36cac1410cb85ca283fa21"
+    },
+    {
+      "repo": "DavidWise01/eve-tooling",
+      "sha": "5e1bc2c9dc75716222408daf838c931024fca2c3",
+      "url": "https://github.com/DavidWise01/eve-tooling/commit/5e1bc2c9dc75716222408daf838c931024fca2c3"
+    },
+    {
+      "repo": "DavidWise01/lineage-kernel",
+      "sha": "97f22144bcfc042be62264f408a50f15b564e08d",
+      "url": "https://github.com/DavidWise01/lineage-kernel/commit/97f22144bcfc042be62264f408a50f15b564e08d"
+    },
+    {
+      "repo": "DavidWise01/unity-tensor",
+      "sha": "ebcf55fd2865111a42e07e0f10d78e8529108784",
+      "url": "https://github.com/DavidWise01/unity-tensor/commit/ebcf55fd2865111a42e07e0f10d78e8529108784"
+    }
+  ]
+}
