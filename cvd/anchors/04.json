@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/3lock",
+      "sha": "ac280a07b95875eec4b94937e6a5d40b26d3965b",
+      "url": "https://github.com/DavidWise01/3lock/commit/ac280a07b95875eec4b94937e6a5d40b26d3965b"
+    },
+    {
+      "repo": "DavidWise01/toroid-kernel",
+      "sha": "1c180665df26967ca19183784ea4452ce00718e0",
+      "url": "https://github.com/DavidWise01/toroid-kernel/commit/1c180665df26967ca19183784ea4452ce00718e0"
+    },
+    {
+      "repo": "DavidWise01/whisper-lattice-log",
+      "sha": "5eaabc14081dbacb54def8044d0d4340a5f94de7",
+      "url": "https://github.com/DavidWise01/whisper-lattice-log/commit/5eaabc14081dbacb54def8044d0d4340a5f94de7"
+    },
+    {
+      "repo": "DavidWise01/terra-prime-kernel",
+      "sha": "abcae0b5a2e22ca875475ac4ee005e144644d659",
+      "url": "https://github.com/DavidWise01/terra-prime-kernel/commit/abcae0b5a2e22ca875475ac4ee005e144644d659"
+    },
+    {
+      "repo": "DavidWise01/stoicheion",
+      "sha": "34a6b403343a4a831c0f324436a44b304366b00c",
+      "url": "https://github.com/DavidWise01/stoicheion/commit/34a6b403343a4a831c0f324436a44b304366b00c"
+    },
+    {
+      "repo": "DavidWise01/positronic-law",
+      "sha": "eae5bcd04eec5aeb2a01553c973913ea88488bdf",
+      "url": "https://github.com/DavidWise01/positronic-law/commit/eae5bcd04eec5aeb2a01553c973913ea88488bdf"
+    },
+    {
+      "repo": "DavidWise01/mirror-solve",
+      "sha": "8f7e155b08e3ea2ff4d45c8b1bf9ad862a7b2c16",
+      "url": "https://github.com/DavidWise01/mirror-solve/commit/8f7e155b08e3ea2ff4d45c8b1bf9ad862a7b2c16"
+    },
+    {
+      "repo": "DavidWise01/tripod-whitepapers",
+      "sha": "e98da0b5073d1e0d849998cd8a81eb547b4679c0",
+      "url": "https://github.com/DavidWise01/tripod-whitepapers/commit/e98da0b5073d1e0d849998cd8a81eb547b4679c0"
+    }
+  ]
+}
