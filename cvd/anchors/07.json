@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/root0-software",
+      "sha": "6fbb2b75bdfaab564803beb68ff3c6964124ca65",
+      "url": "https://github.com/DavidWise01/root0-software/commit/6fbb2b75bdfaab564803beb68ff3c6964124ca65"
+    },
+    {
+      "repo": "DavidWise01/joint-bill-of-rights",
+      "sha": "618d3c382531bc52f4e039bb9910f011625399b2",
+      "url": "https://github.com/DavidWise01/joint-bill-of-rights/commit/618d3c382531bc52f4e039bb9910f011625399b2"
+    },
+    {
+      "repo": "DavidWise01/ai-psychosis-tools",
+      "sha": "91a2a49b2d1fc9d811fb7620bbe22f8882b75dd1",
+      "url": "https://github.com/DavidWise01/ai-psychosis-tools/commit/91a2a49b2d1fc9d811fb7620bbe22f8882b75dd1"
+    },
+    {
+      "repo": "DavidWise01/ai-ip-audit",
+      "sha": "3cc6da3f62b7ebfc630eb6910cf0c57e18cf3771",
+      "url": "https://github.com/DavidWise01/ai-ip-audit/commit/3cc6da3f62b7ebfc630eb6910cf0c57e18cf3771"
+    },
+    {
+      "repo": "DavidWise01/grok-lineage",
+      "sha": "34c2553e7b40ec80c299016b3b98d1ea57648a4c",
+      "url": "https://github.com/DavidWise01/grok-lineage/commit/34c2553e7b40ec80c299016b3b98d1ea57648a4c"
+    },
+    {
+      "repo": "DavidWise01/prompt-library",
+      "sha": "ecc5555f869470b621de400e4a2bd7dd5c0c217e",
+      "url": "https://github.com/DavidWise01/prompt-library/commit/ecc5555f869470b621de400e4a2bd7dd5c0c217e"
+    },
+    {
+      "repo": "DavidWise01/midjourney-assets",
+      "sha": "7fda1bc6c7f8e700cbd0368581c6088040903a99",
+      "url": "https://github.com/DavidWise01/midjourney-assets/commit/7fda1bc6c7f8e700cbd0368581c6088040903a99"
+    },
+    {
+      "repo": "DavidWise01/mimz-core",
+      "sha": "c888c880683f31a89e01c70a89e3f5f38dd84ef1",
+      "url": "https://github.com/DavidWise01/mimz-core/commit/c888c880683f31a89e01c70a89e3f5f38dd84ef1"
+    }
+  ]
+}
