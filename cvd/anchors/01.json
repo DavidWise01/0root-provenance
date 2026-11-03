@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/The-Garden",
+      "sha": "7538478d92bcd2af9701ce2446d47b85e10d5ec8",
+      "url": "https://github.com/DavidWise01/The-Garden/commit/7538478d92bcd2af9701ce2446d47b85e10d5ec8"
+    },
+    {
+      "repo": "DavidWise01/the.source",
+      "sha": "2f16fb674c3575646274369d94ace5176c7d16cc",
+      "url": "https://github.com/DavidWise01/the.source/commit/2f16fb674c3575646274369d94ace5176c7d16cc"
+    },
+    {
+      "repo": "DavidWise01/pocket-universe",
+      "sha": "be0ee7b87c38c87ff6c790c22e22046abf05d20e",
+      "url": "https://github.com/DavidWise01/pocket-universe/commit/be0ee7b87c38c87ff6c790c22e22046abf05d20e"
+    },
+    {
+      "repo": "DavidWise01/Akasha",
+      "sha": "e4e4e602bacd7eb5fe9e79f1cd5615f60595ef2c",
+      "url": "https://github.com/DavidWise01/Akasha/commit/e4e4e602bacd7eb5fe9e79f1cd5615f60595ef2c"
+    },
+    {
+      "repo": "DavidWise01/FractalKernel",
+      "sha": "cc2ac35d9dc9ecb545487164299603a12d324b3b",
+      "url": "https://github.com/DavidWise01/FractalKernel/commit/cc2ac35d9dc9ecb545487164299603a12d324b3b"
+    },
+    {
+      "repo": "DavidWise01/mainflux",
+      "sha": "21c2627bed63d5983fa3c51da7a02aa35d2cc67d",
+      "url": "https://github.com/DavidWise01/mainflux/commit/21c2627bed63d5983fa3c51da7a02aa35d2cc67d"
+    },
+    {
+      "repo": "DavidWise01/green-paper",
+      "sha": "81fbcbf6762c631426a7e9c825cb0fa99be36912",
+      "url": "https://github.com/DavidWise01/green-paper/commit/81fbcbf6762c631426a7e9c825cb0fa99be36912"
+    },
+    {
+      "repo": "DavidWise01/lineage",
+      "sha": "c8f9e1be62a8ba5b270133a490fc8f8f50428417",
+      "url": "https://github.com/DavidWise01/lineage/commit/c8f9e1be62a8ba5b270133a490fc8f8f50428417"
+    }
+  ]
+}
