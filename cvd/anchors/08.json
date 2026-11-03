@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-11-03",
+  "records": [
+    {
+      "repo": "DavidWise01/root0-registry",
+      "sha": "624d23316d0e2f2e943f631eb5422ed2eaf512eb",
+      "url": "https://github.com/DavidWise01/root0-registry/commit/624d23316d0e2f2e943f631eb5422ed2eaf512eb"
+    },
+    {
+      "repo": "DavidWise01/ternary-spec",
+      "sha": "dead520200cffc1c4a9e91297e1945db14296ec3",
+      "url": "https://github.com/DavidWise01/ternary-spec/commit/dead520200cffc1c4a9e91297e1945db14296ec3"
+    },
+    {
+      "repo": "DavidWise01/DavidWise01.github.io",
+      "sha": "b29ccd2935fa439846928849d25a6125709d72c8",
+      "url": "https://github.com/DavidWise01/DavidWise01.github.io/commit/b29ccd2935fa439846928849d25a6125709d72c8"
+    },
+    {
+      "repo": "DavidWise01/attribution-standard",
+      "sha": "a2b99c9191f209fe1aac3f60c1be8548287a18e9",
+      "url": "https://github.com/DavidWise01/attribution-standard/commit/a2b99c9191f209fe1aac3f60c1be8548287a18e9"
+    },
+    {
+      "repo": "DavidWise01/root0-validator",
+      "sha": "f1195c6a43520788709fcafce9bc3d42507b2ec0",
+      "url": "https://github.com/DavidWise01/root0-validator/commit/f1195c6a43520788709fcafce9bc3d42507b2ec0"
+    },
+    {
+      "repo": "DavidWise01/stoicheion-qif",
+      "sha": "e672730b5add32f600881c2bbfa3c186967ddc70",
+      "url": "https://github.com/DavidWise01/stoicheion-qif/commit/e672730b5add32f600881c2bbfa3c186967ddc70"
+    },
+    {
+      "repo": "DavidWise01/al-h2o-reactor",
+      "sha": "ca473e8fbc6891e11ecdca91e92faa836137b156",
+      "url": "https://github.com/DavidWise01/al-h2o-reactor/commit/ca473e8fbc6891e11ecdca91e92faa836137b156"
+    },
+    {
+      "repo": "DavidWise01/tripod-waveform",
+      "sha": "a37e8c6a941021367a9c03bc30c4d883ffec21e1",
+      "url": "https://github.com/DavidWise01/tripod-waveform/commit/a37e8c6a941021367a9c03bc30c4d883ffec21e1"
+    }
+  ]
+}
