@@ -1,0 +1,24 @@
+{
+  "schema": "CVD-PERMEATION-AUDIT-v1",
+  "date": "2026-11-03",
+  "scope": {
+    "accessible_repositories": 100,
+    "public_repositories": 96,
+    "private_excluded": 4
+  },
+  "result": {
+    "new_repository_pointers": 93,
+    "blocked_by_safety_checks": 3,
+    "blocked_repositories": [
+      "DavidWise01/Akasha",
+      "DavidWise01/toph-sovereign",
+      "DavidWise01/toroid-kernel"
+    ]
+  },
+  "pointer_path": ".well-known/cvd.json",
+  "registry": "cvd/public-registry-2026-11-03.json",
+  "commit_anchors": "cvd/anchors/01.json through 12.json",
+  "integrity": "Writes returned commit SHAs; three sample pointers fetched and verified after writes. Whole-repository independent audit not performed.",
+  "scope_limitations": "Public registry covers only repositories exposed to this GitHub connector. Pointer is a static provenance reference, not an automatic update mechanism. Commit observations do not prove legal ownership.",
+  "policy": "No mutation to existing LICENSE or attribution files; no claim of verified legal title; no private repository metadata published."
+}
