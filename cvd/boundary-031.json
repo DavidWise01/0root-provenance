@@ -1,0 +1,24 @@
+{
+  "schema": "CVD-BOUNDARY-031",
+  "as_of": "2026-11-04",
+  "status": "implementation_committed_workflow_not_confirmed",
+  "collector": "cvd/collect031.py",
+  "tests": "cvd/test_collect031.py",
+  "workflow": ".github/workflows/cvd-formic-031.yml",
+  "invariant": "Observe, verify public Git repository identity and head commit, append only if changed",
+  "witness_policy": "one execution = one specified witness, never synthesize other witnesses",
+  "local_prototype_tests": {
+    "passed": 12,
+    "total": 12
+  },
+  "synthetic_benchmark": {
+    "repositories": 2132,
+    "first_new": 2132,
+    "second_new": 0,
+    "planning_ms": 26.1,
+    "writing_ms": 345.8,
+    "unchanged_plan_ms": 180.2,
+    "scope": "local synthetic; excludes network"
+  },
+  "scope_limitations": "Live GitHub Actions execution not confirmed; legal ownership and priority not established. Public-only; append-only; externally retained checkpoints still needed."
+}
