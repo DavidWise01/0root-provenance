@@ -38,7 +38,7 @@ def causal_evidence(record,reader,max_nodes=12,max_depth=5,clock=None):
         "note":"GitHub API observation, not proof of ownership or signed independent attestation"
     }
 
-def inspect_existing(root, records):
+def inspect_existing(root, records, witness=None):
     known=set()
     count=0
     for source in records:
@@ -61,7 +61,7 @@ def inspect_existing(root, records):
                  {k:v for k,v in result.items() if k!="record_sha256"})):
             raise ValueError("causal integrity mismatch: "+str(path))
         count+=1
-    folder=Path(root)/"cvd"/"causal"/(records[0]["witness_id"] if records else "ff")
+    folder=Path(root)/"cvd"/"causal"/(witness or (records[0]["witness_id"] if records else "ff"))
     if folder.exists():
         for path in folder.glob("*.json"):
             if path.name not in known:raise ValueError("orphan causal record: "+str(path))
@@ -77,7 +77,7 @@ def execute(root,owner,witness,api,reader,*,apply=False,max_new=120,
         timespec="seconds").replace("+00:00","Z")
     old=history(root,witness)
     read_records(root,witness,True)
-    causal_known=inspect_existing(root,old)
+    causal_known=inspect_existing(root,old,witness)
     candidates,stats=collect(api,root,owner,witness,max_new=max_new,clock=stamp)
     if stats["hold"]:
         return {"status":"HOLD","phase":"collection","counts":stats,
