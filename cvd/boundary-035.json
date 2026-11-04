@@ -1,0 +1,44 @@
+{
+  "schema": "CVD-BOUNDARY-035",
+  "date": "2026-11-04",
+  "invariant": "Ancestry is verified only when GitHub Git Commit API returns parent references through a fully closed bounded graph; unresolved or budget-exhausted parent relationships are HOLD.",
+  "implementation": "cvd/closure035.py",
+  "tests": "cvd/test_closure035.py",
+  "local_unit_tests": {
+    "passed": 17,
+    "total": 17
+  },
+  "synthetic_local_benchmark": [
+    {
+      "nodes": 100,
+      "elapsed_ms": 0.78
+    },
+    {
+      "nodes": 500,
+      "elapsed_ms": 2.98
+    },
+    {
+      "nodes": 2000,
+      "elapsed_ms": 13.78
+    },
+    {
+      "nodes": 5000,
+      "elapsed_ms": 103.03
+    }
+  ],
+  "adversarial_finding": "Recursive cycle traversal failed at 2000 nodes; corrected with iterative DFS",
+  "remote_live_graph_test": "not performed",
+  "workflow_integration": "not yet integrated into scheduled collector",
+  "semantics": {
+    "VERIFIED": "bounded ancestry graph closes at roots",
+    "HOLD": "missing, malformed, mismatched or budget-exhausted parents",
+    "REJECT": "reported ancestry contains a cycle"
+  },
+  "limitations": [
+    "GitHub API observation is not local cryptographic Git-object verification",
+    "Rate limits may produce HOLD",
+    "No quorum",
+    "Does not determine authorship or copyright title",
+    "Existing witness records not changed"
+  ]
+}
