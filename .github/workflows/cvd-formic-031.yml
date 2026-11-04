@@ -1,22 +1,27 @@
-name: CVD FORMIC 031 - Git Witness Collector
+name: FORMIC CVD - Six Witness Git Perimeter
 on:
   workflow_dispatch:
     inputs:
       observer:
-        description: FORMIC witness channel
+        description: Independent FORMIC channel for this run
         required: true
         default: ff
         type: choice
         options: [ff, fr, cf, cr, rf, rr]
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 0 * * *'
+    - cron: '17 4 * * *'
+    - cron: '17 8 * * *'
+    - cron: '17 12 * * *'
+    - cron: '17 16 * * *'
+    - cron: '17 20 * * *'
 permissions:
   contents: write
 concurrency:
-  group: cvd-formic-031
+  group: formic-cvd-witness
   cancel-in-progress: false
 jobs:
-  witness:
+  observe:
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
@@ -26,29 +31,50 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test append-only collector
-        run: cd cvd && python -m unittest -v test_collect031.py test_reconcile033.py
-      - name: Observe GitHub public repositories
+      - name: Choose actual observing channel
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          SELECTED: ${{ inputs.observer || 'ff' }}
+        shell: bash
+        run: |
+          case "$SCHEDULE" in
+            '17 0 * * *')  channel=ff ;;
+            '17 4 * * *')  channel=fr ;;
+            '17 8 * * *')  channel=cf ;;
+            '17 12 * * *') channel=cr ;;
+            '17 16 * * *') channel=rf ;;
+            '17 20 * * *') channel=rr ;;
+            '') channel="$SELECTED" ;;
+            *) echo "Unrecognized schedule: $SCHEDULE"; exit 2 ;;
+          esac
+          echo "FORMIC_WITNESS=$channel" >> "$GITHUB_ENV"
+          echo "Active real observation channel: $channel"
+      - name: Test FORMIC and existing layers
+        shell: bash
+        run: |
+          cd cvd
+          python -m unittest -v test_collect031.py test_reconcile033.py test_closure035.py test_formic036.py test_formic_compare036.py
+      - name: Observe, reconcile and verify Git ancestry
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FORMIC_WITNESS: ${{ inputs.observer || 'ff' }}
+        shell: bash
         run: |
-          python cvd/collect031.py --owner DavidWise01 --observer "$FORMIC_WITNESS" --max-new 250 --apply > cvd-run031.json
-          cat cvd-run031.json
-      - name: Reconcile temporal witness history
-        env:
-          FORMIC_WITNESS: ${{ inputs.observer || 'ff' }}
+          python cvd/formic036.py --root . --owner DavidWise01 --observer "$FORMIC_WITNESS" --max-new 120 --max-closures 12 --max-nodes 12 --max-depth 5 --apply
+      - name: Jane compares independent observation channels without quorum
+        shell: bash
         run: |
-          python cvd/reconcile033.py --root . --observer "$FORMIC_WITNESS" --apply
-      - name: Append observation-only Git commit
+          python cvd/formic_compare036.py --root . --apply
+      - name: Grandmother appends immutable public evidence to Git
+        shell: bash
         run: |
           git config user.name 'FORMIC CVD Observation'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if [ -d cvd/observations ]; then git add cvd/observations; fi
-          if [ -d cvd/temporal ]; then git add cvd/temporal; fi
+          for folder in cvd/observations cvd/temporal cvd/causal cvd/reports; do
+            if [ -d "$folder" ]; then git add "$folder"; fi
+          done
           if ! git diff --cached --quiet; then
-            git commit -m 'CVD 031: append observed Git head evidence'
+            git commit -m "FORMIC: append $FORMIC_WITNESS witness, causal and comparison evidence"
             git push
           else
-            echo 'No changed public Git observations'
+            echo 'No changed witness evidence'
           fi
