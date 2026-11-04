@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name 'FORMIC CVD Observation'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add cvd/observations
+          if [ -d cvd/observations ]; then git add cvd/observations; fi
           if ! git diff --cached --quiet; then
             git commit -m 'CVD 031: append observed Git head evidence'
             git push
