@@ -1,0 +1,23 @@
+{
+  "schema": "CVD-BOUNDARY-032",
+  "date": "2026-11-04",
+  "invariant": "Observed time, append time, and reported event time are distinct; delayed observation does not invalidate an append-only witness chain.",
+  "files": [
+    "cvd/temporal032.py",
+    "cvd/test_temporal032.py",
+    "cvd/TEMPORAL_032.md"
+  ],
+  "tests": {
+    "local_package_passed": 16,
+    "local_package_total": 16,
+    "github_test_suite_tests": 12,
+    "github_ci_status": "not_confirmed"
+  },
+  "live_collector_integration": "not yet wired into collect031.py",
+  "limitations": [
+    "Timestamps are witness assertions and are not trusted timestamps",
+    "SHA-256 integrity is not authorship proof",
+    "Same-time divergent reports are preserved without quorum",
+    "No guarantee of detecting rewritten history without independently pinned checkpoint"
+  ]
+}
