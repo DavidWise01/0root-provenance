@@ -1,0 +1,24 @@
+{
+  "schema": "CVD-BOUNDARY-033",
+  "date": "2026-11-04",
+  "invariant": "Late evidence is appended in arrival order and reconstructed in observation-time order without overwriting older records.",
+  "files": [
+    "cvd/reconcile033.py",
+    "cvd/test_reconcile033.py",
+    ".github/workflows/cvd-formic-031.yml"
+  ],
+  "local_regression_tests": {
+    "passed": 14,
+    "total": 14
+  },
+  "workflow": {
+    "configured": true,
+    "execution_verified": false
+  },
+  "witness_policy": "Each observer has its own chain; no quorum; no synthetic independent observations",
+  "limits": [
+    "Timestamps are not independently trusted",
+    "Observed commits do not certify ownership",
+    "Independent checkpoints still necessary against complete history rewrite"
+  ]
+}
