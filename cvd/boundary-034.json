@@ -1,0 +1,10 @@
+{
+  "schema": "CVD-BOUNDARY-034",
+  "date": "2026-11-04",
+  "invariant": "Git parent edges can establish causality if independently verified; observation timestamps alone cannot.",
+  "source": "cvd/causal034.py",
+  "tests": "cvd/test_causal034.py",
+  "local_reference_tests": "14/14 passed",
+  "github_workflow_execution": "not confirmed",
+  "notes": "Git author and committer timestamps are mutable metadata; parent edges require independent Git object verification. No quorum, no ownership claims."
+}
