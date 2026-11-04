@@ -1,0 +1,11 @@
+{
+  "schema": "CVD-BOUNDARY-025",
+  "date": "2026-11-03",
+  "new_writes": 5,
+  "existing_verified": 7,
+  "read_failures": 0,
+  "repository_range": "stream cursor 101, indices 28-39",
+  "updated_tool": "cvd/permeate.py",
+  "remaining_work": "Continue verified public inventory and pointer audit; do not publish private repo names.",
+  "note": "Existing CVD files were preserved, not overwritten. Repository commits do not establish legal title."
+}
