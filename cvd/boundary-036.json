@@ -1,0 +1,45 @@
+{
+  "schema": "CVD-FORMIC-INTEGRATION-036",
+  "date": "2026-11-04",
+  "status": "Git sources and scheduling committed; live workflow execution not verified",
+  "owner": "DavidWise01",
+  "repo": "0root-provenance",
+  "channels": [
+    "ff",
+    "fr",
+    "cf",
+    "cr",
+    "rf",
+    "rr"
+  ],
+  "schedule_utc": [
+    "00:17",
+    "04:17",
+    "08:17",
+    "12:17",
+    "16:17",
+    "20:17"
+  ],
+  "pipeline": [
+    "collect031",
+    "reconcile033",
+    "closure035",
+    "formic_compare036",
+    "append-only-git-commit"
+  ],
+  "files": [
+    "cvd/formic036.py",
+    "cvd/test_formic036.py",
+    "cvd/formic_compare036.py",
+    "cvd/test_formic_compare036.py",
+    "cvd/formic.html",
+    ".github/workflows/cvd-formic-031.yml",
+    "cvd/index.html"
+  ],
+  "local_compatibility_tests": {
+    "passed": 22,
+    "total": 22,
+    "notes": "Run against earlier local standalone-module copies using API compatibility adapters; GitHub Actions tests using committed dependencies not yet observed"
+  },
+  "safety": "Public repositories only, no fabricated witnesses or quorum. Git history and witness hashes are not legal rights proofs. Unverified causal ancestry is HOLD."
+}
