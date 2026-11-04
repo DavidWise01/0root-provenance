@@ -1,0 +1,29 @@
+{
+  "schema": "CVD-BOUNDARY-026",
+  "date": "2026-11-03",
+  "invariant": "A repository is verified only after readback confirms schema, repository identity, and central registry link.",
+  "tool": "cvd/census.py",
+  "operation": "read-only",
+  "sample_verifications": [
+    {
+      "repository": "DavidWise01/atlas",
+      "result": "verified"
+    },
+    {
+      "repository": "DavidWise01/dantes-inferno",
+      "result": "verified"
+    },
+    {
+      "repository": "DavidWise01/without-remorse",
+      "result": "verified"
+    },
+    {
+      "repository": "DavidWise01/0root-provenance",
+      "result": "verified"
+    }
+  ],
+  "census_run_status": "not_executed",
+  "estate_count_status": "not_fully_deduplicated",
+  "private_policy": "exclude private names and pointers from public reporting",
+  "ownership_policy": "verified provenance metadata does not establish legal title"
+}
