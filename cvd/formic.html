@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FORMIC · Six Witness Perimeter</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui,sans-serif;background:#071014;color:#deeee9}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#164039 0,transparent 60%);min-height:100vh}
+main{max-width:1150px;margin:auto;padding:32px 20px 70px}a{color:#69e3cc}h1{font-size:clamp(28px,6vw,52px);line-height:1.1;margin:18px 0}p{color:#a7c3c2;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin:25px 0}
+.card{border:1px solid #27574e;border-radius:12px;padding:20px;background:#102320bd}
+.card b{font-size:27px;color:#96f6dc}.card small{display:block;color:#9eb9b2;margin-top:9px}
+.status{padding:14px 18px;background:#142c29;border:1px solid #30584f;border-radius:9px;margin:20px 0}
+table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid #254b42;padding:12px;text-align:left;vertical-align:top}
+th{color:#95edce}td{overflow-wrap:anywhere}code{font-size:12px;color:#b9d9cf}
+.warning{max-width:900px;font-size:13px}footer{margin-top:35px;font-size:12px;color:#779b94}
+</style></head><body><main>
+<a href="./index.html">← Constant Velocity Diamond</a>
+<h1>FORMIC / Six Witness Perimeter</h1>
+<p>Observation-only Git provenance. Six scheduled channels, each an actual separate run: ff, fr, cf, cr, rf, rr. Jane compares without votes; Grandmother preserves append-only records.</p>
+<div class="grid" id="channels"></div>
+<div class="status" id="status" role="status">Reading public Git observation snapshots…</div>
+<h2>Latest published comparison</h2>
+<div style="overflow-x:auto"><table><thead><tr><th>GitHub repo ID</th><th>Witness state</th><th>Reported commit heads</th></tr></thead><tbody id="rows"><tr><td colspan="3">No snapshot loaded</td></tr></tbody></table></div>
+<p class="warning">Different commit heads may reflect different observation times. Agreement does not establish legal copyright ownership. GitHub Actions execution and GitHub Pages publication are separate from the presence of these source files.</p>
+<footer><a href="https://github.com/DavidWise01/0root-provenance/tree/main/cvd/observations">Witness ledgers</a> · <a href="https://github.com/DavidWise01/0root-provenance/tree/main/cvd/temporal">Temporal</a> · <a href="https://github.com/DavidWise01/0root-provenance/tree/main/cvd/causal">Causal evidence</a> · <a href="https://github.com/DavidWise01/0root-provenance/actions">GitHub Actions</a></footer>
+<script>
+const owner="DavidWise01",repo="0root-provenance",base="https://api.github.com/repos/"+owner+"/"+repo;
+const roles=["ff","fr","cf","cr","rf","rr"];
+const channelBox=document.querySelector("#channels"),status=document.querySelector("#status"),body=document.querySelector("#rows");
+for(const role of roles){const card=document.createElement("div");card.className="card";const b=document.createElement("b");b.textContent=role;const small=document.createElement("small");small.textContent="Not yet observed";card.append(b,small);card.dataset.role=role;channelBox.append(card)}
+async function fetchJSON(url){const response=await fetch(url,{headers:{Accept:"application/vnd.github+json"}});if(!response.ok)throw new Error("GitHub API "+response.status);return response.json()}
+function showReport(data){
+ const active=new Set(data.active_channels||[]);
+ for(const card of channelBox.children){card.querySelector("small").textContent=active.has(card.dataset.role)?"Recorded channel":"Awaiting observation"}
+ body.replaceChildren();let reports=data.repositories||[];
+ for(const entry of reports.slice(0,300)){
+  const tr=document.createElement("tr");
+  const c1=document.createElement("td");c1.textContent=String(entry.github_repository_id);
+  const c2=document.createElement("td");c2.textContent=entry.status;
+  const c3=document.createElement("td");c3.textContent=(entry.witnesses||[]).map(w=>w.observer+": "+w.commit.slice(0,12)).join(" | ");
+  tr.append(c1,c2,c3);body.append(tr)
+ }
+ if(!reports.length){const tr=document.createElement("tr");const td=document.createElement("td");td.colSpan=3;td.textContent="No FORMIC records have been published yet";tr.append(td);body.append(tr)}
+ status.textContent="Snapshot loaded: "+(data.total_observations||0)+" observations across "+reports.length+" repositories. No quorum.";
+}
+(async()=>{
+ try{
+  const commits=await fetchJSON(base+"/commits?path=cvd/reports&per_page=1");
+  if(!Array.isArray(commits)||!commits.length){status.textContent="No comparison report committed yet; the workflow may not have executed.";return}
+  const commit=await fetchJSON(base+"/commits/"+encodeURIComponent(commits[0].sha));
+  const files=(commit.files||[]).filter(f=>/^cvd\/reports\/formic-[0-9a-f]{64}\.json$/.test(f.filename));
+  if(!files.length){status.textContent="Latest report commit found, but no matching snapshot file could be identified.";return}
+  const snapshot=await fetchJSON(base+"/contents/"+files[0].filename+"?ref="+encodeURIComponent(commits[0].sha));
+  const raw=atob((snapshot.content||"").replace(/\s/g,""));
+  const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
+  showReport(JSON.parse(new TextDecoder().decode(bytes)))
+ }catch(error){status.textContent="Public GitHub report unavailable: "+error.message+". View the source repo's cvd/reports folder."}
+})();
+</script></main></body></html>
