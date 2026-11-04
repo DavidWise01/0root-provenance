@@ -1,0 +1,48 @@
+name: CVD FORMIC 031 - Git Witness Collector
+on:
+  workflow_dispatch:
+    inputs:
+      observer:
+        description: FORMIC witness channel
+        required: true
+        default: ff
+        type: choice
+        options: [ff, fr, cf, cr, rf, rr]
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cvd-formic-031
+  cancel-in-progress: false
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test append-only collector
+        run: cd cvd && python -m unittest -v test_collect031.py
+      - name: Observe GitHub public repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORMIC_WITNESS: ${{ inputs.observer || 'ff' }}
+        run: |
+          python cvd/collect031.py --owner DavidWise01 --observer "$FORMIC_WITNESS" --max-new 250 --apply > cvd-run031.json
+          cat cvd-run031.json
+      - name: Append observation-only Git commit
+        run: |
+          git config user.name 'FORMIC CVD Observation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add cvd/observations
+          if ! git diff --cached --quiet; then
+            git commit -m 'CVD 031: append observed Git head evidence'
+            git push
+          else
+            echo 'No changed public Git observations'
+          fi
