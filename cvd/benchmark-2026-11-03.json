@@ -1,0 +1,50 @@
+{
+  "schema": "CVD-BENCHMARK-v1",
+  "date": "2026-11-03",
+  "implementation": "cvd/continuity.py",
+  "environment": {
+    "python": "3.13.5",
+    "os": "Linux 6.18.57 x86_64"
+  },
+  "method": "Synthetic linear parent-linked chains; median of 5 local in-memory validation runs; excludes network, disk and GitHub API latency",
+  "original_unit_tests": {
+    "passed": 11,
+    "total": 11
+  },
+  "checkpoint_extension_tests": {
+    "passed": 4,
+    "total": 4
+  },
+  "results": [
+    {
+      "events": 100,
+      "median_ms": 1.15,
+      "events_per_second": 86976,
+      "json_bytes": 47319
+    },
+    {
+      "events": 2132,
+      "median_ms": 23.171,
+      "events_per_second": 92012,
+      "json_bytes": 1025177
+    },
+    {
+      "events": 10000,
+      "median_ms": 108.057,
+      "events_per_second": 92544,
+      "json_bytes": 4825423
+    },
+    {
+      "events": 50000,
+      "median_ms": 579.971,
+      "events_per_second": 86211,
+      "json_bytes": 24305423
+    }
+  ],
+  "adversarial": {
+    "single_unrehashed_change_detected": true,
+    "rehashed_history_accepted_without_external_checkpoint": true,
+    "rehashed_history_detected_with_previously_retained_checkpoint": true
+  },
+  "limitations": "Synthetic data; not 2,132 real repository reads. Checkpoint must be authenticated or pinned outside the mutable chain. No legal ownership proof."
+}
