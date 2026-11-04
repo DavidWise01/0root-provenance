@@ -4,7 +4,6 @@ Default is DRY RUN. --apply writes only a missing .well-known/cvd.json file.
 Never enumerates private repos into a public registry or changes license files.
 """
 import argparse,json,subprocess,sys,time
-from pathlib import Path
 REGISTRY="https://github.com/DavidWise01/0root-provenance/blob/main/cvd/public-registry-2026-11-03.json"
 PROTOCOL="https://github.com/DavidWise01/0root-provenance/tree/main/cvd"
 def gh(*args):
@@ -45,13 +44,15 @@ def main():
             existing=subprocess.run(["gh","api",f"/repos/{name}/contents/{path}"],capture_output=True,text=True)
             if existing.returncode==0:
                 counts["exists"]+=1;continue
+            # A genuine HTTP 404 is different from permissions or network failure.
+            if "HTTP 404" not in existing.stderr and "404 Not Found" not in existing.stderr:
+                raise RuntimeError("Cannot establish pointer absence: "+existing.stderr.strip()[:150])
             if not args.apply:
                 counts["dry_run"]+=1;continue
             branch=repo["default_branch"]
             # gh api takes raw JSON; GitHub Contents API expects base64 text.
             import base64
             payload={"message":"CVD: link public provenance registry","content":base64.b64encode(pointer(name).encode()).decode(),"branch":branch}
-            gh("api","--method","PUT",f"/repos/{name}/contents/{path}","--input","-") if False else None
             cp=subprocess.run(["gh","api","--method","PUT",f"/repos/{name}/contents/{path}","--input","-"],input=json.dumps(payload),text=True,capture_output=True)
             if cp.returncode: raise RuntimeError(cp.stderr.strip())
             counts["created"]+=1
