@@ -1,0 +1,10 @@
+{
+  "schema": "CVD-EXTERNAL-WITNESS-v1",
+  "date": "2026-11-03",
+  "repository": "DavidWise01/0root-provenance",
+  "github_repository_id": 1251815744,
+  "observed_commit": "b249b4d56386c5a634185fc721d743db5451dbe8",
+  "evidence_url": "https://github.com/DavidWise01/0root-provenance/commit/b249b4d56386c5a634185fc721d743db5451dbe8",
+  "observation": "Repository numeric ID and commit SHA retrieved from connected GitHub",
+  "limitations": "Read-only identity and commit existence; does not prove original authorship, rights, creation priority or continuity across renames."
+}
