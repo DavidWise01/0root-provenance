@@ -1,0 +1,28 @@
+{
+  "schema": "CVD-BOUNDARY-029",
+  "date": "2026-11-03",
+  "source": {
+    "repository": "DavidWise01/0root-provenance",
+    "repository_id": 1251815744,
+    "commit": "b249b4d56386c5a634185fc721d743db5451dbe8",
+    "path": "cvd/benchmark-2026-11-03.json",
+    "git_blob_sha": "5883d495c9586dbaef8af9ab513d93c68607ed30"
+  },
+  "external_witnesses": [
+    {
+      "repository": "DavidWise01/attribution-standard",
+      "path": "cvd/witnesses/CVD-029-20261103-001.json",
+      "write_commit": "89408ffb9ada2a30464a132d26ab98ef7b8b0d87",
+      "readback": "confirmed"
+    }
+  ],
+  "blocked_witnesses": [
+    "DavidWise01/lineage-proven",
+    "DavidWise01/root0-registry"
+  ],
+  "verifier": "cvd/remote_checkpoint.py",
+  "tests": "cvd/test_remote_checkpoint.py",
+  "tests_execution": "not independently executed",
+  "invariant": "A witness preserves a pinned Git object and repository ID in another location; no votes or quorum.",
+  "limitations": "Both repositories are under the same GitHub account; a shared actor may change both. External witness not an independent third-party attestation or legal title proof. Original commit must remain available to verify its object."
+}
