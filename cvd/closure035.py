@@ -40,15 +40,20 @@ def closure(repo,head,reader,max_nodes=200,max_depth=20,observed_utc=None):
   nodes[sha]={"sha":sha,"parents":parents,"depth":depth};expanded.add(sha)
   for parent in parents:
    if parent not in expanded:pending.append((parent,depth+1))
- visited=set();visiting=set()
- def cycle(sha):
-  if sha in visiting:return True
-  if sha in visited:return False
-  visiting.add(sha)
-  for p in nodes.get(sha,{}).get("parents",[]):
-   if p in nodes and cycle(p):return True
-  visiting.remove(sha);visited.add(sha);return False
- cyclic=any(cycle(sha) for sha in nodes if sha not in visited)
+ visited=set();visiting=set();cyclic=False
+ for start in nodes:
+  if start in visited:continue
+  stack=[(start,False)]
+  while stack:
+   sha,finishing=stack.pop()
+   if finishing:
+    visiting.discard(sha);visited.add(sha);continue
+   if sha in visiting:cyclic=True;break
+   if sha in visited:continue
+   visiting.add(sha);stack.append((sha,True))
+   for p in reversed(nodes[sha]["parents"]):
+    if p in nodes and p not in visited:stack.append((p,False))
+  if cyclic:break
  status="REJECT" if cyclic else "HOLD" if unresolved else "VERIFIED"
  result={"schema":"CVD-CAUSAL-CLOSURE-035-v1","repository":repo,"head":head,"status":status,"max_nodes":max_nodes,"max_depth":max_depth,"observed_utc":observed_utc or datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),"nodes":sorted(nodes.values(),key=lambda n:(n["depth"],n["sha"])),"unresolved":[{"sha":s,"reason":unresolved[s]} for s in sorted(unresolved)],"cycle_detected":cyclic,"decision":None,"quorum":None,"meaning":"GitHub-observed ancestry only; not proof of copyright ownership or historical originality"}
  result["record_sha256"]=payload_digest(result);return result
