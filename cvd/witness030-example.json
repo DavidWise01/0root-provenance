@@ -1,0 +1,24 @@
+{
+  "schema": "CVD-030-EXAMPLE",
+  "disclaimer": "SYNTHETIC demo only: these are not real witness observations",
+  "event_id": "CVD-030-DEMO-001",
+  "repository": "DavidWise01/0root-provenance",
+  "commit": "b249b4d56386c5a634185fc721d743db5451dbe8",
+  "inputs": [
+    {
+      "witness_id": "ff",
+      "outcome": "VERIFIED"
+    },
+    {
+      "witness_id": "cf",
+      "outcome": "HOLD"
+    },
+    {
+      "witness_id": "rf",
+      "outcome": "VERIFIED"
+    }
+  ],
+  "expected_comparison": "DIVERGENT_REPORTS",
+  "quorum": null,
+  "decision": "NONE"
+}
