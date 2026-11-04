@@ -29,5 +29,11 @@ class CausalClosureTests(unittest.TestCase):
   with self.assertRaises(ValueError):closure("../bad",A,Reader({}))
  def test_bool_budget(self):
   with self.assertRaises(ValueError):closure("Owner/repo",A,Reader({A:[]}),max_nodes=True)
+ def test_deep_history_iterative(self):
+  class Deep:
+   def commit(self,repo,sha):
+    n=int(sha,16)
+    return {"sha":sha,"parents":[{"sha":f"{n-1:040x}"}] if n>1 else []}
+  self.assertEqual(closure("Owner/repo",f"{2000:040x}",Deep(),max_nodes=2000,max_depth=2000)["status"],"VERIFIED")
  def test_duplicate_parent(self):self.assertEqual(run({A:[B,B],B:[]},A)["status"],"HOLD")
 if __name__=="__main__":unittest.main()
