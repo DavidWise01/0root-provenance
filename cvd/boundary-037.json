@@ -1,0 +1,22 @@
+{
+  "schema": "CVD-BOUNDARY-037",
+  "date": "2026-11-04",
+  "invariant": "Configured run != completed run != verified publication",
+  "operational_receipt": "cvd/operations037.py",
+  "tests": "cvd/test_operations037.py",
+  "workflow": ".github/workflows/cvd-formic-031.yml",
+  "unit_tests": {
+    "authored": 17,
+    "github_ci_verified": false
+  },
+  "live_actions_runs_verified": 0,
+  "workflow_wired": true,
+  "receipt_scoping": "previously completed runs only; excludes current run id; GitHub-reported success not independently attested",
+  "limitations": [
+    "No Actions run list available via current accessible tools",
+    "No authenticated GitHub run conclusion confirmed",
+    "Read window limited to latest 100 workflow runs",
+    "Existing witnesses are not overwritten",
+    "GitHub workflow success does not establish copyright ownership"
+  ]
+}
