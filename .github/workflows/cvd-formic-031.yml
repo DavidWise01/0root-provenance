@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test append-only collector
-        run: cd cvd && python -m unittest -v test_collect031.py
+        run: cd cvd && python -m unittest -v test_collect031.py test_reconcile033.py
       - name: Observe GitHub public repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,11 +35,17 @@ jobs:
         run: |
           python cvd/collect031.py --owner DavidWise01 --observer "$FORMIC_WITNESS" --max-new 250 --apply > cvd-run031.json
           cat cvd-run031.json
+      - name: Reconcile temporal witness history
+        env:
+          FORMIC_WITNESS: ${{ inputs.observer || 'ff' }}
+        run: |
+          python cvd/reconcile033.py --root . --observer "$FORMIC_WITNESS" --apply
       - name: Append observation-only Git commit
         run: |
           git config user.name 'FORMIC CVD Observation'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if [ -d cvd/observations ]; then git add cvd/observations; fi
+          if [ -d cvd/temporal ]; then git add cvd/temporal; fi
           if ! git diff --cached --quiet; then
             git commit -m 'CVD 031: append observed Git head evidence'
             git push
