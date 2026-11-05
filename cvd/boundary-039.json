@@ -1,0 +1,26 @@
+{
+  "schema": "CVD-BOUNDARY-039",
+  "date": "2026-11-04",
+  "invariant": "Accept chain recovery only after verifying a previously retained checkpoint prefix against a separately supplied SHA256 digest",
+  "code": "cvd/external_anchor039.py",
+  "tests": "cvd/test_external_anchor039.py",
+  "regression_tests_authored": 14,
+  "regression_tests_executed": false,
+  "workflow": ".github/workflows/cvd-formic-031.yml",
+  "git_commit_source_verification": "pending readback",
+  "anchor_provisioned": false,
+  "workflow_live_run_confirmed": false,
+  "semantics": {
+    "correct_anchor": "VERIFIED prefix",
+    "mismatch": "HOLD",
+    "partial_settings": "HOLD, halt",
+    "no_settings": "Explicit UNANCHORED mode; continue"
+  },
+  "limitations": [
+    "Same-account second repository is not independent administration",
+    "Repository secret can be controlled by same account",
+    "No signed trusted timestamp",
+    "No copyright title determination",
+    "Future chain suffix not pinned until next checkpoint"
+  ]
+}
