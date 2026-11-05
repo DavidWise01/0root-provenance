@@ -53,7 +53,13 @@ jobs:
         shell: bash
         run: |
           cd cvd
-          python -m unittest -v test_collect031.py test_reconcile033.py test_closure035.py test_formic036.py test_formic_compare036.py test_operations037.py
+          python -m unittest -v test_collect031.py test_reconcile033.py test_closure035.py test_formic036.py test_formic_compare036.py test_operations037.py test_recover038.py
+      - name: Recover interrupted FORMIC append work
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          python cvd/recover038.py --root . --max-closures 12 --apply
       - name: Observe, reconcile and verify Git ancestry
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
