@@ -53,7 +53,21 @@ jobs:
         shell: bash
         run: |
           cd cvd
-          python -m unittest -v test_collect031.py test_reconcile033.py test_closure035.py test_formic036.py test_formic_compare036.py test_operations037.py test_recover038.py
+          python -m unittest -v test_collect031.py test_reconcile033.py test_closure035.py test_formic036.py test_formic_compare036.py test_operations037.py test_recover038.py test_external_anchor039.py
+      - name: Verify independently pinned external recovery checkpoint
+        env:
+          CVD_ANCHOR_URL: ${{ vars.CVD_EXTERNAL_ANCHOR_URL }}
+          CVD_ANCHOR_PIN: ${{ secrets.CVD_EXTERNAL_ANCHOR_SHA256 }}
+        shell: bash
+        run: |
+          if [ -z "$CVD_ANCHOR_URL" ] && [ -z "$CVD_ANCHOR_PIN" ]; then
+            echo 'HOLD: external anchor not provisioned; continuing in explicitly UNANCHORED mode'
+          elif [ -z "$CVD_ANCHOR_URL" ] || [ -z "$CVD_ANCHOR_PIN" ]; then
+            echo 'HOLD: partial external anchor configuration'
+            exit 2
+          else
+            python cvd/external_anchor039.py --root . --verify-url "$CVD_ANCHOR_URL" --expected-sha256 "$CVD_ANCHOR_PIN"
+          fi
       - name: Recover interrupted FORMIC append work
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
