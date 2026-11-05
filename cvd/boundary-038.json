@@ -1,0 +1,26 @@
+{
+  "schema": "CVD-BOUNDARY-038",
+  "date": "2026-11-04",
+  "invariant": "After failure, reconstruct missing append-only material from valid prior witness records; checkpoint divergence causes HOLD",
+  "implementation": "cvd/recover038.py",
+  "tests": "cvd/test_recover038.py",
+  "tests_authored": 15,
+  "tests_executed_in_this_turn": false,
+  "workflow": ".github/workflows/cvd-formic-031.yml",
+  "workflow_integration": "Preflight recovery before Git observation; tests added",
+  "workflow_live_execution": "unverified",
+  "features": [
+    "Six-channel preflight",
+    "Source/temporal/causal identity validation",
+    "Optional independently retained checkpoint",
+    "Exclusive atomic file creation",
+    "Causal backlog and recovery"
+  ],
+  "limitations": [
+    "No externally anchored trusted checkpoint installed in workflow",
+    "No proof of live CI completion",
+    "Crash recovery is not protection from wholesale malicious rewrites",
+    "GitHub API causality is bounded",
+    "No quorum or legal ownership inference"
+  ]
+}
